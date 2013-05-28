@@ -23,6 +23,7 @@ Cookbooks
 Attributes
 ==========
 
+* `node['notepadplusplus']['version']` - Version of Notepad++ to install, defaults to 6.3.3.
 
 Usage
 =====
