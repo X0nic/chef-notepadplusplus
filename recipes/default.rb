@@ -11,5 +11,5 @@ end
 # Add command to path so it can be launched from the command line
 windows_path 'C:\Program Files (x86)\Notepad++' do
   action :add
-  only_if { node['notepadplusplus']['add_to_path']}
+  only_if { node['notepadplusplus']['add_to_path'] }
 end
