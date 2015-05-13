@@ -1,5 +1,5 @@
 
-node.default['notepadplusplus']['version'] = '6.3.3'
+node.default['notepadplusplus']['version'] = '6.7.5'
 
 node.default['notepadplusplus']['base_url'] = 'http://download.tuxfamily.org/notepadplus/archive'
 node.default['notepadplusplus']['package_name'] = 'Notepad++'
