@@ -1,5 +1,4 @@
-site :opscode
+source 'https://supermarket.chef.io'
 
 metadata
-cookbook 'minitest-handler', github: 'daptiv/minitest-handler-cookbook', protocol: :ssh
-cookbook 'daptiv_windows_utils', github: 'daptiv/daptiv_windows_utils', protocol: :ssh
+cookbook 'minitest-handler'
