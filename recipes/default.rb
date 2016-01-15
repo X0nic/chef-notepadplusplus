@@ -1,5 +1,4 @@
 #
-# Author:: Daptiv Engineering (<dl_teamengineering@daptiv.com>)
 # Cookbook Name:: chef-notepadplusplus
 # Recipe:: default
 #

@@ -1,9 +1,6 @@
 #
-# Author:: Daptiv Engineering (<dl_teamengineering@daptiv.com>)
 # Cookbook Name:: chef-notepadplusplus
 # Attribute:: default
-#
-# All rights reserved - Do Not Redistribute
 #
 
 default['notepadplusplus']['version'] = '6.7.5'
