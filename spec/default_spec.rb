@@ -5,10 +5,16 @@ describe 'chef-notepadplusplus::default' do
   end
 
   it 'installs the Notepadd++ package' do
-    expect(chef_run).to install_windows_package 'Notepad++'
+    expect(chef_run).to install_windows_package(
+      'http://download.tuxfamily.org/notepadplus/archive/6.7.5/' \
+      'npp.6.7.5.Installer.exe'
+    ).with(
+      checksum: '8c3602d82d22b7a4348b479' \
+        'e1fa6352eee9df17005ac28a5af7c59074b561898'
+    )
   end
 
   it 'adds a windows path' do
-    expect(chef_run).to add_windows_path 'C:\Program Files (x86)\Notepad++'
+    expect(chef_run).to add_windows_path('C:\Program Files (x86)\Notepad++')
   end
 end
