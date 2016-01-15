@@ -1,0 +1,24 @@
+---
+driver:
+  # 12.6 has issue with windows_package resource atm
+  # https://github.com/chef/chef/issues/4354
+  require_chef_omnibus: 12.5.1
+  name: vagrant
+  provider: virtualbox
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: windows2012r2_chef12
+    driver:
+      box_url: <%= ENV['WINDOWS_BOX_URL'] %>
+    driver_config:
+      communicator: winrm
+    transport:
+      name: winrm
+
+suites:
+  - name: default
+    run_list:
+      - recipe[chef-notepadplusplus]
