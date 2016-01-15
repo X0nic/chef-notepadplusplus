@@ -31,6 +31,7 @@ Include `chef-notepadplusplus` in your node's `run_list`:
     "recipe[chef-notepadplusplus::default]"
   ]
 }
+```
 
 ## Contributing
     

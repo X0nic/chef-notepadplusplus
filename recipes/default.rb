@@ -9,7 +9,8 @@ checksum = node['notepadplusplus'][version]['checksum']
 url = "#{node['notepadplusplus']['base_url']}/#{version}/npp." \
   "#{version}.Installer.exe"
 
-windows_package url do
+windows_package "Notepad++_#{version}" do
+  source url
   checksum checksum unless checksum.nil?
   action :install
 end
