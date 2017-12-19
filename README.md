@@ -1,34 +1,24 @@
 Description
 ===========
-
-[Notepad++](http://notepad-plus-plus.org/) is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.
+This cookbook installs Notepad++
 
 Requirements
 ============
+* Chef 12.4+
 
 Platform
 --------
-
-* Windows XP
-* Windows Vista
-* Windows Server 2003 R2
-* Windows 7
-* Windows Server 2008 (R1, R2)
-
-Cookbooks
----------
-
-* windows
+* Windows
 
 Attributes
 ==========
-
+`default['notepadplusplus']['url']`
+`default['notepadplusplus']['checksum']`
 
 Usage
 =====
+Include the default recipe on a node's runlist to ensure that Notepad++ is installed
 
-default
--------
-
-
-
+Origin
+====
+This modification was actually built upon https://github.com/Webtrends/notepadplusplus/ but since this cookbook was made earlier ported them back to this one.
